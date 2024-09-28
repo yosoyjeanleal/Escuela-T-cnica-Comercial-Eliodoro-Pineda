@@ -115,6 +115,11 @@ header {
     .logo {
         justify-content: center;
     }
+    /* Aumentar tamaño de la hamburguesa en pantallas pequeñas */
+    .hamburger {
+        font-size: 2.5rem;
+        /* Aumenta el tamaño del ícono */
+    }
 }
 
 
