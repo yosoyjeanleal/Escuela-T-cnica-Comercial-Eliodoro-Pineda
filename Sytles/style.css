@@ -106,6 +106,18 @@ header {
 }
 
 
+/* Ocultar el texto del logo en pantallas pequeñas */
+
+@media (max-width: 576px) {
+    .logo-text {
+        display: none;
+    }
+    .logo {
+        justify-content: center;
+    }
+}
+
+
 /* Estilos de la sección hero */
 
 .hero {
