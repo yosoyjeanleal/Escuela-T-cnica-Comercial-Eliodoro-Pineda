@@ -6,7 +6,6 @@
 
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
     color: #333;
     display: flex;
     flex-direction: column;
@@ -31,13 +30,11 @@ body {
 
 .menu-logo img {
     width: 40px;
-    height: auto;
     margin-right: 10px;
 }
 
 .menu-logo h1 {
     font-size: 1.2em;
-    margin: 0;
 }
 
 .nav-bar {
@@ -54,7 +51,7 @@ body {
     color: white;
     text-decoration: none;
     padding: 8px 10px;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .nav-links a:hover {
@@ -72,7 +69,7 @@ body {
     height: 2px;
     background-color: white;
     position: relative;
-    transition: background 0.3s;
+    transition: background-color 0.3s;
 }
 
 .hamburger::before,
@@ -104,6 +101,7 @@ body {
         background-color: #3e9142;
         width: 100%;
         text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     .menu-toggle:checked+.hamburger {
         background-color: transparent;
@@ -118,39 +116,35 @@ body {
     }
     .menu-toggle:checked~.nav-links {
         display: flex;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     .hamburger {
         display: block;
     }
 }
 
+.notification-container {
+    position: relative;
+}
+
+.close-notification {
+    display: none;
+}
+
 .notification {
-    background-color: #ffcc00;
-    margin-top: 1%;
-    padding: 10px;
-    text-align: left;
     display: flex;
     align-items: center;
+    background-color: #ffcc00;
+    padding: 10px;
     font-weight: bold;
-    border: none;
-    border-radius: 8px;
+    transition: opacity 0.3s ease;
 }
 
-.notification h2 {
-    color: #f01515;
-    font-size: 20px;
-}
-
-.notification p {
-    color: #333;
-    font-size: 1em;
-    line-height: 1.5;
+.close-notification:checked+.notification {
+    display: none;
 }
 
 .notification-image {
     width: 80px;
-    height: auto;
     margin-right: 15px;
 }
 
@@ -177,4 +171,150 @@ body {
 
 .footer-content a:hover {
     color: #ddd;
+}
+
+
+/* Sección de Inicio */
+
+#home {
+    background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .cta {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* Secciones Generales */
+
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
+}
+
+
+/* Servicios */
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+
+.service img {
+    width: 100%;
+}
+
+.service h3 {
+    margin: 15px 0 10px;
+    color: #ff5733;
+}
+
+
+/* Equipo */
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/* Portafolio */
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-container img {
+    width: 300px;
+    margin: 20px;
+}
+
+
+/* Formulario de Contacto */
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+    .services-container,
+    .team-container,
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
