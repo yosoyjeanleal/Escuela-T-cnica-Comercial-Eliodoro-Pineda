@@ -4,14 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Escuela Técnica de Comercio "Eliodoro Pineda"</title>
-
+    <title>Contacto - Escuela Técnica de Comercio "Eliodoro Pineda"</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/Sytles/styles.css">
 </head>
 
 <body>
-
     <header class="menu-superior">
         <div class="menu-logo">
             <img src="/Recursos/IMG/Logo_Eliodoro.png" alt="Logo de la Escuela">
@@ -23,24 +21,82 @@
             <div class="nav-links">
                 <a href="/index.html"><i class="fas fa-home"></i> Inicio</a>
                 <a href="/Recursos/HTML/Nosotros.html"><i class="fas fa-users"></i> Nosotros</a>
-                <a href="/Recursos/HTML/Mensiones.html"><i class="fas fa-cogs"></i> Servicios</a>
+                <a href="/Recursos/HTML/Menciones.html"><i class="fas fa-cogs"></i> Menciones</a>
                 <a href="/Recursos/HTML/Galleria.html"><i class="fas fa-images"></i> Galería</a>
                 <a href="/Recursos/HTML/Contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
             </div>
         </nav>
     </header>
-    <iframe src="/Recursos/HTML/Notificaciones.html" class="notification"></iframe>
 
+    <section class="contact1-section">
+        <h2>Contacto</h2>
+        <div class="contact1-details">
+            <h3>Redes Sociales</h3>
+            <div class="social1-links">
+                <a href="https://www.facebook.com" class="social1-icon"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="https://twitter.com" class="social1-icon"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="https://www.instagram.com" class="social1-icon"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com" class="social1-icon"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
 
+            <h3>Envíanos un mensaje</h3>
+            <form action="mailto:jeancleal03022004@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
 
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <h3>Contactar por WhatsApp</h3>
+            <p>Para atención inmediata, puedes escribirnos a través de WhatsApp:</p>
+            <a href="https://wa.me/1234567890" class="whatsapp-link">
+                <i class="fab fa-whatsapp"></i> Escribir por WhatsApp
+            </a>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; 2024 Escuela Técnica de Comercio "Eliodoro Pineda". Todos los derechos reservados.</p>
-            <p><a href="mailto:info@eliodoropineda.edu">info@eliodoropineda.edu</a> | Tel: +58 (123) 456-7890</p>
+            <div class="footer-section">
+                <h3>Escuela Técnica de Comercio "Eliodoro Pineda"</h3>
+                <p>&copy; 2024 Todos los derechos reservados.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Acceso Rápido</h3>
+                <ul>
+                    <li><a href="/index.html">Inicio</a></li>
+                    <li><a href="/Recursos/HTML/Nosotros.html">Nosotros</a></li>
+                    <li><a href="/Recursos/HTML/Menciones.html">Menciones</a></li>
+                    <li><a href="/Recursos/HTML/Galleria.html">Galería</a></li>
+                    <li><a href="/Recursos/HTML/Contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Desarrollado Por</h3>
+                <h2>Maria Aular</h2>
+                <h2>Moises Medina</h2>
+                <h2>Kelvy Vargas</h2>
+                <h2>Jean Leal</h2>
+            </div>
         </div>
     </footer>
-
 </body>
 
 </html>

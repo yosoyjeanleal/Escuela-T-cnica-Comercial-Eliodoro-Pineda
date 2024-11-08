@@ -1,3 +1,5 @@
+/* Reset de estilo general */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +13,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+.cta {
+    color: #4CAF50;
+}
+
+
+/* ---- Estilos de navegación y barra superior ---- */
 
 .menu-superior {
     display: flex;
@@ -58,6 +67,9 @@ body {
     background-color: #45a049;
 }
 
+
+/* ---- Icono de menú hamburguesa ---- */
+
 .menu-toggle {
     display: none;
 }
@@ -91,6 +103,430 @@ body {
     top: 8px;
 }
 
+
+/* ---- Notificación ---- */
+
+.notification-container {
+    position: relative;
+}
+
+.close-notification {
+    display: none;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    background-color: #ffcc00;
+    padding: 10px;
+    font-weight: bold;
+    transition: opacity 0.3s ease;
+}
+
+.close-notification:checked+.notification {
+    display: none;
+}
+
+.notification-image {
+    width: 80px;
+    margin-right: 15px;
+}
+
+
+/* ---- Footer ---- */
+
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-section h2 {
+    font-size: 1em;
+    margin-bottom: 1px;
+    color: #ffffff;
+    text-align: left;
+}
+
+.footer-section p {
+    font-size: 1em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #000000;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 1.5em;
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #000000;
+}
+
+
+/* ---- Sección de Inicio ---- */
+
+#home {
+    background-color: #45a049;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Banner h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.Banner p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.Banner .cta {
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+/* ---- Secciones Generales ---- */
+
+section {
+    padding: 60px 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #333;
+}
+
+
+/* ---- Sección Servicios ---- */
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+
+.service img {
+    width: 100%;
+}
+
+.service h3 {
+    margin: 15px 0 10px;
+    color: #4CAF50;
+}
+
+
+/* ---- Sección Equipo ---- */
+
+#team {
+    background-color: #4CAF50;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+    margin: 20px;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+
+/* ---- Sección Portafolio ---- */
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-container img {
+    width: 300px;
+    margin: 20px;
+}
+
+
+/* ---- Formulario de Contacto ---- */
+
+
+/* Reset de estilo general */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+/* Estilos de la sección de contacto */
+
+.contact1-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.contact1-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #4CAF50;
+}
+
+.contact1-details {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact1-details h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.social1-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.social1-links a {
+    font-size: 20px;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.social1-links a:hover {
+    color: #4CAF50;
+}
+
+.social1-icon {
+    margin-right: 8px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #25D366;
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    background-color: #25D366;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-link:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-link i {
+    margin-right: 8px;
+}
+
+
+/* ---- Media Queries para Responsividad ---- */
+
+@media (max-width: 768px) {
+    .contact1-section {
+        padding: 20px 10px;
+    }
+    .contact1-details {
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .contact1-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .contact1-details h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .social1-links a {
+        font-size: 18px;
+    }
+    form {
+        width: 100%;
+        padding: 15px;
+    }
+    form input,
+    form textarea {
+        font-size: 14px;
+    }
+    form button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .whatsapp-link {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact1-section {
+        padding: 15px 5px;
+    }
+    .contact1-details {
+        padding: 0 5px;
+    }
+    .contact1-section h2 {
+        font-size: 24px;
+    }
+    .contact1-details h3 {
+        font-size: 20px;
+    }
+    .social1-links {
+        gap: 10px;
+        align-items: center;
+    }
+    .social1-links a {
+        font-size: 16px;
+    }
+    form {
+        padding: 10px;
+    }
+    form input,
+    form textarea {
+        font-size: 12px;
+    }
+    form button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    .whatsapp-link {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
+
+
+/* ---- Media Queries para Responsividad ---- */
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -120,201 +556,24 @@ body {
     .hamburger {
         display: block;
     }
-}
-
-.notification-container {
-    position: relative;
-}
-
-.close-notification {
-    display: none;
-}
-
-.notification {
-    display: flex;
-    align-items: center;
-    background-color: #ffcc00;
-    padding: 10px;
-    font-weight: bold;
-    transition: opacity 0.3s ease;
-}
-
-.close-notification:checked+.notification {
-    display: none;
-}
-
-.notification-image {
-    width: 80px;
-    margin-right: 15px;
-}
-
-.footer {
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: auto;
-}
-
-.footer-content p {
-    margin: 5px 0;
-}
-
-.footer-content a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.footer-content a:hover {
-    color: #ddd;
-}
-
-
-/* Sección de Inicio */
-
-#home {
-    background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
-    color: #fff;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.hero .cta {
-    padding: 10px 20px;
-    background-color: #ff5733;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-
-/* Secciones Generales */
-
-section {
-    padding: 60px 20px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 2em;
-    color: #333;
-}
-
-
-/* Servicios */
-
-.services-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.service {
-    width: 300px;
-    text-align: center;
-    margin: 20px;
-}
-
-.service img {
-    width: 100%;
-}
-
-.service h3 {
-    margin: 15px 0 10px;
-    color: #ff5733;
-}
-
-
-/* Equipo */
-
-.team-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.team-member {
-    width: 200px;
-    text-align: center;
-    margin: 20px;
-}
-
-.team-member img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-
-/* Portafolio */
-
-.portfolio-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.portfolio-container img {
-    width: 300px;
-    margin: 20px;
-}
-
-
-/* Formulario de Contacto */
-
-form {
-    max-width: 600px;
-    margin: auto;
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input,
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-form button {
-    padding: 10px 20px;
-    background-color: #ff5733;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-
-/* Responsivo */
-
-@media (max-width: 768px) {
     .services-container,
     .team-container,
     .portfolio-container {
         flex-direction: column;
         align-items: center;
+    }
+    .footer-content {
+        flex-direction: row;
+        /* Coloca las secciones en línea */
+        justify-content: space-between;
+    }
+    .footer-section {
+        flex: 1;
+        min-width: 150px;
+        /* Ajusta el tamaño de las secciones */
+    }
+    .social-links {
+        justify-content: flex-start;
+        /* Alinea los iconos de redes sociales */
     }
 }
