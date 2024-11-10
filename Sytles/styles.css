@@ -8,7 +8,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #000000;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,8 +16,7 @@ body {
 }
 
 .cta {
-    color: #234d2e;
-   
+    color: #234d2e;   
     
 }
 
@@ -37,8 +36,7 @@ body {
 .menu-superior {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
     padding: 15px 20px;
     color: white;
     font-weight: bold;
@@ -167,7 +165,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ff5e004f; 
+    background-color: #ebe70fd2; 
     padding-bottom: 10px;
     font-weight: bold; 
     transition: opacity 0.3s ease; 
@@ -188,7 +186,7 @@ body {
 .footer {
     background-color: #234d2e;
     color: white;
-    padding: 40px 20px;
+    padding: 20px 20px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -201,24 +199,38 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
+    
 }
 
+.nombres {
+    padding-right: 0px;
+}
 .footer-section {
+    align-items: center; /* Centrar verticalmente */
+    justify-content: space-between;
     flex: 1;
     min-width: 250px;
 }
 
+.footer-section-image {
+    width: 150px;
+    height: auto;
+    
+}
+
 .footer-section h3 {
     font-size: 1.5em;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     color: #ffffff;
 }
 
+
 .footer-section h2 {
     font-size: 1em;
-    margin-bottom: 1px;
+    margin-bottom: 10px;
     color: #ffffff;
+
     text-align: left;
 }
 
@@ -273,13 +285,22 @@ body {
     justify-content: center;
     text-align: center;
 }
+#home h2 {
+  
+    color: #fff;
+   
+}
 .Banner h2 {
-    font-size: 2.5em;
+    font-size: 4em;
+    margin-bottom: 10px;
+}
+.Banner h3 {
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
 .Banner p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-bottom: 20px;
 }
 
@@ -301,37 +322,41 @@ h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2em;
-    color: #ffffff;
+    color: #234d2e;
 }
+
 
 
 /* ---- Sección Servicios ---- */
 
-.services-container {
+.nosotros-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.service {
+.sobre-nosotros {
     width: 300px;
     text-align: center;
     margin: 20px;
 }
 
-.service img {
+.sobre-nosotros h3 {
+    text-align: center;
+    
+    font-size: 1.2em;
+    color: #234d2e;
+}
+
+.sobre-nosotros img {
     width: 100%;
 }
 
-.service h3 {
-    margin: 15px 0 10px;
-    color: #234d2e;
-}
 
 
 /* ---- Sección Equipo ---- */
 
-#team {
+#mensiones {
     background-image: 
     linear-gradient(to bottom, #234d2e ,#4caf4f3f), /* Darker red gradient */
     url(/Recursos/IMG/1730813885254.jpg); /* Background image */
@@ -340,43 +365,47 @@ h2 {
     background-attachment: fixed;   
     background-blend-mode: multiply; 
 }
+#mensiones h2,h3 {
+    margin: 15px 0 10px;
+    color: #ffffff;
+    
+}
 
-.team-container {
+.mensiones-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.team-member {
+.mensiones-opciones {
     width: 200px;
     text-align: center;
     margin: 20px;
 }
 
-.team-member img {
+.mensiones-opciones img {
     width: 100%;
     border-radius: 50%;
     border: #ffffff solid;
-    background-color: #409443ef;
+    background-color: #234d2eee;
 }
+
+
+
 
 
 /* ---- Sección Portafolio ---- */
 
-.portfolio-container {
+.fotos-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.portfolio-container img {
+.fotos-container img {
     width: 300px;
     margin: 20px;
 }
-
-
-/* ---- Formulario de Contacto ---- */
-
 
 
 
@@ -387,23 +416,29 @@ h2 {
     padding: 40px 20px;
     text-align: center;
     background-color: #f4f4f4;
+    
 }
 
 .contact1-section h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #4CAF50;
+    color: #234d2e;
+   
 }
 
 .contact1-details {
     max-width: 800px;
     margin: 0 auto;
 }
+.contact1-details p {
+    padding-bottom: 10px;
+    
+}
 
 .contact1-details h3 {
     font-size: 28px;
     margin-bottom: 15px;
-    color: #4CAF50;
+    color: #234d2e;
 }
 
 .social1-links {
@@ -415,7 +450,7 @@ h2 {
 
 .social1-links a {
     font-size: 20px;
-    color: #333;
+    color: #000000;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -423,7 +458,7 @@ h2 {
 }
 
 .social1-links a:hover {
-    color: #4CAF50;
+    color: #234d2e;
 }
 
 .social1-icon {
@@ -456,24 +491,26 @@ form textarea {
 }
 
 form button {
-    background-color: #4CAF50;
+    background-color: #234d2e;
     color: white;
+    font-weight: bold;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
+    
 }
 
 form button:hover {
-    background-color: #25D366;
+    background-color: #22bb5a;
 }
 
 .whatsapp-link {
     display: inline-flex;
     align-items: center;
-    background-color: #25D366;
+    background-color: #35aa60;
     color: white;
     font-size: 18px;
     padding: 10px 20px;
@@ -483,13 +520,13 @@ form button:hover {
 }
 
 .whatsapp-link:hover {
-    background-color: #128C7E;
+    background-color: #0aa71f;
 }
 
 .whatsapp-link i {
-    margin-right: 8px;
+    margin-right: 12px;
+    
 }
-
 
 /* ---- Media Queries para Responsividad ---- */
 
@@ -621,24 +658,44 @@ form button:hover {
     }
 }
 
-.gallery-container {
+.galeria-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    gap: 20px; /* Espacio entre los elementos */
     width: 90%;
     max-width: 1200px;
-    padding-left: 100px;
+    margin: auto; /* Centrar la galería */
+    padding: 20px; /* Espacio interno */
+}
+.galleria1-section {
+    padding: 40px 20px;
+    text-align: center;  
+    
+}
+.galleria1-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #234d2e;
+   
 }
 
-.gallery-item {
+
+
+.galeria-item {
     background-color: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición para el efecto hover */
 }
 
-.gallery-item img {
+.galeria-item:hover {
+    transform: scale(1.05); /* Escala al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
+}
+
+.galeria-item img {
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -648,6 +705,14 @@ form button:hover {
     padding: 10px;
     font-size: 1rem;
     color: #555;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .description {
+        font-size: 0.9rem; /* Ajustar tamaño del texto en pantallas pequeñas */
+        padding: 5px; /* Reducir padding en pantallas pequeñas */
+    }
 }
 
 @media (max-width: 768px) {
