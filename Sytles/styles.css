@@ -12,22 +12,47 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+   
 }
 
 .cta {
-    color: #4CAF50;
+    color: #234d2e;
+   
+    
 }
-
 
 /* ---- Estilos de navegación y barra superior ---- */
 
+.menu-superior, #home {
+    
+    background-image: 
+    linear-gradient(to bottom, #234d2e ,#4caf4f3f), /* Darker red gradient */
+    url(/Recursos/IMG/1730813885254.jpg); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   
+    background-blend-mode: multiply; 
+    
+}
 .menu-superior {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #4CAF50;
+    
     padding: 15px 20px;
     color: white;
+    font-weight: bold;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.menu-superior1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #234d2e ;    
+    padding: 15px 20px;
+    color: white;
+    font-weight: bold;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -49,22 +74,45 @@ body {
 .nav-bar {
     display: flex;
     align-items: center;
+    padding: 15px 20px;
+    
 }
 
 .nav-links {
     display: flex;
+    border-radius: 9px;
     gap: 1rem;
+    position: relative; /* Necesario para el pseudo-elemento */
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
     padding: 8px 10px;
-    transition: background-color 0.3s;
+    position: relative; /* Necesario para la línea inferior */
+    transition: color 0.3s; /* Transición suave para el color */
 }
 
 .nav-links a:hover {
-    background-color: #45a049;
+    color: #ffffff; /* Color del texto en hover */
+    font-weight: bold; /* Estilo negrita */
+}
+
+/* Línea inferior en hover */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Ajusta la posición vertical de la línea */
+    height: 2px; /* Altura de la línea */
+    background-color: #fcfcfcf8; /* Color de la línea */
+    transform: scaleX(0); /* Inicialmente oculta */
+    transition: transform 0.3s ease; /* Transición suave para la línea */
+}
+
+.nav-links a:hover::after {
+    transform: scaleX(1); /* Muestra la línea al hacer hover */
 }
 
 
@@ -106,37 +154,39 @@ body {
 
 /* ---- Notificación ---- */
 
+/* ---- Estilos de Notificación ---- */
 .notification-container {
     position: relative;
 }
 
 .close-notification {
-    display: none;
+    display: none; 
 }
 
 .notification {
     display: flex;
     align-items: center;
-    background-color: #ffcc00;
-    padding: 10px;
-    font-weight: bold;
-    transition: opacity 0.3s ease;
+    justify-content: center;
+    background-color: #ff5e004f; 
+    padding-bottom: 10px;
+    font-weight: bold; 
+    transition: opacity 0.3s ease; 
 }
 
-.close-notification:checked+.notification {
-    display: none;
+.close-notification:checked + .notification {
+    display: none; /* Oculta la notificación si se marca el checkbox */
 }
 
 .notification-image {
-    width: 80px;
-    margin-right: 15px;
+    width: 80px; /* Ancho de la imagen */
+    position: center; /* Espaciado a la derecha de la imagen */
 }
 
 
 /* ---- Footer ---- */
 
 .footer {
-    background-color: #4CAF50;
+    background-color: #234d2e;
     color: white;
     padding: 40px 20px;
     display: flex;
@@ -215,7 +265,7 @@ body {
 /* ---- Sección de Inicio ---- */
 
 #home {
-    background-color: #45a049;
+  
     color: #fff;
     height: 100vh;
     display: flex;
@@ -223,7 +273,6 @@ body {
     justify-content: center;
     text-align: center;
 }
-
 .Banner h2 {
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -252,7 +301,7 @@ h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2em;
-    color: #333;
+    color: #ffffff;
 }
 
 
@@ -276,14 +325,20 @@ h2 {
 
 .service h3 {
     margin: 15px 0 10px;
-    color: #4CAF50;
+    color: #234d2e;
 }
 
 
 /* ---- Sección Equipo ---- */
 
 #team {
-    background-color: #4CAF50;
+    background-image: 
+    linear-gradient(to bottom, #234d2e ,#4caf4f3f), /* Darker red gradient */
+    url(/Recursos/IMG/1730813885254.jpg); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;   
+    background-blend-mode: multiply; 
 }
 
 .team-container {
@@ -323,21 +378,7 @@ h2 {
 /* ---- Formulario de Contacto ---- */
 
 
-/* Reset de estilo general */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
 
 /* Estilos de la sección de contacto */
@@ -536,7 +577,7 @@ form button:hover {
         position: absolute;
         top: 80px;
         right: 0;
-        background-color: #3e9142;
+        background-color: #234d2ecc ;
         width: 100%;
         text-align: center;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
