@@ -165,7 +165,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fffb00; 
+    background-color: #ebe70fd2; 
     padding-bottom: 10px;
     font-weight: bold; 
     transition: opacity 0.3s ease; 
@@ -390,8 +390,53 @@ h2 {
     background-color: #234d2eee;
 }
 
+/* Estilos generales para la sección de menciones */
 
 
+
+/* Estilo del título principal */
+.menciones h2 {
+    text-align: center; /* Centrar el texto */
+    color: #234d2e; /* Color oscuro para el texto */
+    font-size: 2em; /* Tamaño del texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+}
+
+/* Estilo para cada mención individual */
+.mencion {
+    margin-bottom: 15px; /* Espacio entre cada mención */
+    padding: 15px; /* Espaciado interno */
+    border-left: 4px solid #234d2e; /* Línea a la izquierda en color azul */
+    background-color: #ffffff; 
+    border-radius: 10px;
+}
+
+/* Estilo del título de cada mención */
+.mencion h3 {
+    color: #234d2e; /* Color azul para los títulos de las menciones */
+    font-size: 1.5em; /* Tamaño del texto */
+    margin-bottom: 10px; /* Espacio debajo del título de la mención */
+}
+
+/* Estilo del párrafo dentro de cada mención */
+.mencion p {
+    color: #234d2e; /* Color gris para el texto del párrafo */
+    line-height: 1.6; /* Altura de línea para mejor legibilidad */
+}
+
+/* Estilo para las imágenes dentro de las menciones */
+.mencion-image {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+    display: block; /* Hace que las imágenes sean bloques para centrar fácilmente */
+    margin-top: 10px; /* Espacio arriba de la imagen */
+}
+
+.menciones {
+    background-color: #234d2e70;
+   
+}
 
 
 /* ---- Sección Portafolio ---- */
