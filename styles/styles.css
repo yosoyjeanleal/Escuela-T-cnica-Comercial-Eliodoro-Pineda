@@ -392,7 +392,10 @@ h2 {
 
 /* Estilos generales para la sección de menciones */
 
-
+.menciones {
+    background-color: #234d2ecb; /* Fondo claro */
+    
+}
 
 /* Estilo del título principal */
 .menciones h2 {
@@ -426,17 +429,14 @@ h2 {
 
 /* Estilo para las imágenes dentro de las menciones */
 .mencion-image {
-    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    max-width: 50%; /* Asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* Mantiene la proporción de la imagen */
     border-radius: 5px; /* Bordes redondeados para las imágenes */
     display: block; /* Hace que las imágenes sean bloques para centrar fácilmente */
     margin-top: 10px; /* Espacio arriba de la imagen */
 }
 
-.menciones {
-    background-color: #234d2e70;
-   
-}
+
 
 
 /* ---- Sección Portafolio ---- */
